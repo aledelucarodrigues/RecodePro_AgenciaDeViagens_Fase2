@@ -50,311 +50,151 @@
         <main>
             <!--Início do Login -->
             <div class="container mt-3">
-                <h2 class="title" style="text-align: center">Login</h2>
+                <h2 class="title" style="text-align: center">Área Login do Cliente 🛩️</h2>
                 <form class="row g-3 m-5">
-                    <div class="row mb-3 offset-md-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">E-mail</label>
-                        <div class="col-sm-5">
-                            <input type="text" class="form-control" id="inputEmail3" placeholder="email@servidor.com">
+                    <div class="container me-3">
+                        <div class="row mb-3 offset-md-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">E-mail</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="inputEmail3"
+                                    placeholder="email@servidor.com">
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mb-3 offset-md-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">Senha</label>
-                        <div class="col-sm-5">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="senha">
-                        </div>
-                    </div>
-
-                    <div class="row mb-3 offset-md-3">
-                        <div class="col-sm-10">
-                            <div class="form-check mb-4">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                <label class="form-check-label" for="gridCheck">
-                                    Salvar acesso
-                                </label>
+                        <div class="row mb-3 offset-md-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Senha</label>
+                            <div class="col-sm-5">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="senha">
                             </div>
                         </div>
 
-                        <div class="col-sm-10">
+                        <div class="row mb-3 offset-md-3">
+                            <div class="col-sm-10 justify-content-md-center">
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Salvar acesso
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                        <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-end"> -->
+                            <!-- <div class="sticky-sm-top"> -->
+                            <!-- <div class="col-sm-10"> -->
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal">
-                                Entrar
+                                 Entrar 
                             </button>
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal2">
+                                Criar conta
+                            </button>
+                        </div>
+                    </div>
 
-                            <div class="col-sm-10">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal2">
-                                    Criar conta
-                                </button>
+                    <!-- Modal 1 - Login -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-primary text-white">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel"> Let's Go | Login </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Acesso realizado com sucesso.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Fechar</button>
+                                </div>
                             </div>
+                        </div>
+                    </div>
 
-                            <!-- Modal 1 - Login -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header bg-primary text-white">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel"> Let's Go | Login </h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
+                    <!-- Modal 2 - Cadastro Site -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-primary text-white">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel"> Let's Go | Cadastro
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!--Início do Formulário de Cadastro -->
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Nome
+                                                Completo:</label>
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Nome">
                                         </div>
-                                        <div class="modal-body">
-                                            Acesso realizado com sucesso.
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">CPF:</label>
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Apenas números">
                                         </div>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Telefone:</label>
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="(DDD) XXXXX-XXXX">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Endereço:</label>
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Endereço">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Cidade:</label>
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="Cidade">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">CEP:</label>
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="CEP">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">UF:</label>
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="UF">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">E-mail:</label>
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="nome@dominio.com">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Senha:</label>
+                                            <input type="text" class="form-control" id="recipient-name"
+                                                placeholder="******">
+                                        </div>
+
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">Fechar</button>
+                                            <button type="submit" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">Cadastrar</button>
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-dismiss="modal">Fechar</button>
                                         </div>
-                                    </div>
+
+                                    </form>
+
                                 </div>
+
                             </div>
-
-                            <!-- Modal 2 - Cadastro Site -->
-                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header bg-primary text-white">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel"> Let's Go | Cadastro
-                                            </h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <!--Início do Formulário de Cadastro -->
-                                            <form>
-                                                <div class="mb-3">
-                                                    <label for="recipient-name" class="col-form-label">Nome
-                                                        Completo:</label>
-                                                    <input type="text" class="form-control" id="recipient-name"
-                                                        placeholder="Nome">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="recipient-name" class="col-form-label">CPF:</label>
-                                                    <input type="text" class="form-control" id="recipient-name"
-                                                        placeholder="Apenas números">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="recipient-name"
-                                                        class="col-form-label">Telefone:</label>
-                                                    <input type="text" class="form-control" id="recipient-name"
-                                                        placeholder="(DDD) XXXXX-XXXX)">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="recipient-name"
-                                                        class="col-form-label">Endereço:</label>
-                                                    <input type="text" class="form-control" id="recipient-name"
-                                                        placeholder="Endereço">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="recipient-name"
-                                                        class="col-form-label">Cidade:</label>
-                                                    <input type="text" class="form-control" id="recipient-name"
-                                                        placeholder="Cidade">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="recipient-name"
-                                                        class="col-form-label">CEP:</label>
-                                                    <input type="text" class="form-control" id="recipient-name"
-                                                        placeholder="CEP">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="recipient-name"
-                                                        class="col-form-label">UF:</label>
-                                                    <input type="text" class="form-control" id="recipient-name"
-                                                        placeholder="UF">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="recipient-name"
-                                                        class="col-form-label">E-mail:</label>
-                                                    <input type="text" class="form-control" id="recipient-name"
-                                                        placeholder="nome@dominio.com">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="recipient-name"
-                                                        class="col-form-label">Senha:</label>
-                                                    <input type="text" class="form-control" id="recipient-name"
-                                                        placeholder="******">
-                                                </div>
-
-                                                <div class="modal-footer">
-                                                    <!-- <button type="button" class="btn btn-primary"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#exampleModal">Cadastrar</button> -->
-                                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                                        data-bs-target="#exampleModal">Cadastrar</button>
-                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                                </div>
-
-                                            </form>
-
-
-
-
-                                            <!-- <div class="container mt-3">
-                                                <h5 class="title" style="text-align: center">Preencha seus dados para cadastro:</h5>
-                                                <form class="row g-3 m-12">
-                                                    <div class="row mb-2 offset-md-3">
-                                                        <label for="inputEmail3"
-                                                            class="col-sm-2 col-form-label">Nome</label>
-                                                        <div class="col-sm-5">
-                                                            <input type="text" class="form-control" id="inputEmail3"
-                                                                placeholder="Nome">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-3 offset-md-3">
-                                                        <label for="inputEmail3"
-                                                            class="col-sm-2 col-form-label">CPF</label>
-                                                        <div class="col-sm-5">
-                                                            <input type="text" class="form-control" id="inputEmail3"
-                                                                placeholder="CPF">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-3 offset-md-3">
-                                                        <label for="inputEmail3"
-                                                            class="col-sm-2 col-form-label">Telefone</label>
-                                                        <div class="col-sm-5">
-                                                            <input type="tel" class="form-control" id="inputEmail3"
-                                                                placeholder="DDD + Telefone">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-3 offset-md-3">
-                                                        <label for="inputEmail3"
-                                                            class="col-sm-2 col-form-label">Endereço</label>
-                                                        <div class="col-sm-5">
-                                                            <input type="text" class="form-control" id="inputEmail3"
-                                                                placeholder="Endereço">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-3 offset-md-3">
-                                                        <label for="inputEmail3"
-                                                            class="col-sm-2 col-form-label">Cidade</label>
-                                                        <div class="col-sm-5">
-                                                            <input type="text" class="form-control" id="inputEmail3"
-                                                                placeholder="Cidade">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-3 offset-md-3">
-                                                        <label for="inputEmail3"
-                                                            class="col-sm-2 col-form-label">CEP</label>
-                                                        <div class="col-sm-5">
-                                                            <input type="text" class="form-control" id="inputEmail3"
-                                                                placeholder="CEP">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-3 offset-md-3">
-                                                        <label for="inputEmail3"
-                                                            class="col-sm-2 col-form-label">UF</label>
-                                                        <div class="col-sm-5">
-                                                            <input type="text" class="form-control" id="inputEmail3"
-                                                                placeholder="UF">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-3 offset-md-3">
-                                                        <label for="inputEmail3"
-                                                            class="col-sm-2 col-form-label">E-mail</label>
-                                                        <div class="col-sm-5">
-                                                            <input type="email" class="form-control" id="inputEmail3"
-                                                                placeholder="E-mail">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mb-3 offset-md-3">
-                                                        <label for="inputEmail3"
-                                                            class="col-sm-2 col-form-label">Senha</label>
-                                                        <div class="col-sm-5">
-                                                            <input type="text" class="form-control" id="inputEmail3"
-                                                                placeholder="Senha">
-                                                        </div>
-                                                    </div>
-
-                                                                                                           
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-primary"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#exampleModal">Cadastrar</button>
-                                                        </div>
-                                                    </div>
-                                            </div> -->
-                                        </div>
-
-
-
-                                    </div>
-                                </div>
+                        </div>
                 </form>
-                <!-- Fim do Login -->
+            </div>
+            <!-- Fim do Login -->
 
         </main>
 
         <!--Footer-->
         <footer id="footer" class="footer-1 container pt-5">
-            <div class="main-footer widgets-darks typo-dark">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="widget subscribe no-box d-flex justify-content-center">
-                                <a href="index.html"> <img src="./imagens/logoempe.png"></a>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="widget no-box">
-                                <h5 class="widget-title">Acesso Rápido<span></span></h5>
-                                <ul class="thumbnail-widget">
-                                    <li>
-                                        <div class="thumb-content"><a href="./index.html">Página Inicial</a></div>
-                                    </li>
-                                    <li>
-                                        <div class="thumb-content"><a href="./destino.html">Melhores Destinos</a></div>
-                                    </li>
-                                    <li>
-                                        <div class="thumb-content"><a href="./promoções.html">Promoções</a></div>
-                                    </li>
-                                    <li>
-                                        <div class="thumb-content"><a href="./contato.html">Contato</a></div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-                            <div class="widget no-box">
-                                <h5 class="widget-title">Siga-nos<span></span></h5>
-                                <p>Acompanhe nossos vídeos semanais com dicas dos melhores destinos no Brasil e no
-                                    Mundo.</p>
-                                <a class="btn btn-danger" href="https:www.youtube.com" target="_blank">Inscreva-se</a>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6 col-md-3">
-
-                            <div class="widget no-box">
-                                <h5 class="widget-title">Contatos<span></span></h5>
-
-                                <p><a href="mailto:info@domain.com" title="E-mail Contato">contato@letsgo.com.br</a></p>
-                                <ul class="social-footer2">
-                                    <li class=""><a title="Youtube" target="_blank" href="https:www.youtube.com"><img
-                                                alt="Youtube" width="30" height="30" src="imagens/iconYT.png"></a>
-                                    </li>
-                                    <li class=""><a href="https://www.facebook.com/" target="_blank"
-                                            title="Facebook"><img alt="Facebook" width="30" height="30"
-                                                src="imagens/iconFacebook.png"></a>
-                                    </li>
-                                    <li class=""><a href="https:wa.me/message/IHKAGQNUMFFZO1" target="_blank"
-                                            title="WhatsApp"><img alt="WhatsApp" width="30" height="30"
-                                                src="imagens/iconWhats.png"></a>
-                                    </li>
-                                    <li class=""><a title="Instagram" target="_blank"
-                                            href="https://www.instagram.com/"><img alt="instagram" width="30"
-                                                height="30" src="imagens/iconInsta.png"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
 
             <!-- Inicio Icone WhatsApp no final da página -->
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
