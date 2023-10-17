@@ -1,6 +1,3 @@
-# RecodePro_AgenciaDeViagens_Fase2
-Repositório para entrega da segunda fase do projeto de Agência de Viagens.
-
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/aledelucarodrigues/RecodePro_AgenciaDeViagens">
