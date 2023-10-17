@@ -20,7 +20,7 @@
 
 
 <h4 align="center"> 
-	🚀 Projeto Em Andamento 🚀 
+	🚀 Fase 2 🚀 
 </h4>
 
 <p align="center">
@@ -108,7 +108,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## 🦸 Autor
 
- <a><b>Alessandra de Luca Rodrigues</b>></a> <a title="Rocketseat">🚀</a>
+ <a><b>Alessandra de Luca Rodrigues</b>></a> <a title="aledeluca">🚀</a>
  <br />
 
 [![Linkedin Badge](https://img.shields.io/badge/-AleDeLucaRodrigues-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/aledelucarodrigues/)](https://www.linkedin.com/in/aledelucarodrigues/) 
